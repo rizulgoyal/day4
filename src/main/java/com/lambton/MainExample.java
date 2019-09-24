@@ -19,19 +19,39 @@ public class MainExample {
         p1.display();
 
         Faculty f1;
-        f1 = new Faculty(2,
+        f1 = new FullTimeFaculty(2,
                 "Pritesh",
                 "Patel",
                 LocalDate.now(),
                 "Male",
                 "Associate Professor",
                 (float) 5842.50,
-                "Coding"
+                "Coding",
+                500.76f
 
                 );
 
         p1=f1;
-        f1.display();
+        p1.display();
+
+        Faculty f2;
+        f2 = new PartTimeFaculty(2,
+                "Pritesh",
+                "Patel",
+                LocalDate.now(),
+                "Male",
+                "Associate Professor",
+                (float) 5842.50,
+                "Coding",
+                15.33f,
+                12
+
+
+        );
+
+        p1=f2;
+        p1.display();
+
 
 
     }

@@ -2,7 +2,7 @@ package com.lambton;
 
 import java.time.LocalDate;
 
-public class Faculty extends Person{
+public abstract class Faculty extends Person{
 
     private String designation;
     private float salary;
@@ -15,6 +15,8 @@ public class Faculty extends Person{
         this.salary = salary;
         this.specialization = specialization;
     }
+
+
 
     public String getDesignation() {
         return designation;
@@ -54,4 +56,7 @@ public class Faculty extends Person{
         System.out.println("Faculty Specialization: "+ this.getSpecialization());
 
     }
+
+    public abstract float calculateTotalSalary();
+
 }
